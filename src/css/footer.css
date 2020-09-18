@@ -1,0 +1,80 @@
+footer {
+  cursor: default;
+  padding: 90px 0;
+  position: relative;
+}
+
+footer .travail_ensemble {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .travail_ensemble .margin_supp {
+  margin: 0 100px;
+}
+
+footer .travail_ensemble .travail {
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+footer .travail_ensemble .travail a {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 90px;
+  color: #10374F;
+  line-height: 100px;
+}
+
+footer .travail_ensemble .infos {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+footer .travail_ensemble .infos a, footer .travail_ensemble .infos p {
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #10374F;
+}
+
+footer .travail_ensemble .infos:first-of-type {
+  text-align: left;
+}
+
+footer .travail_ensemble .infos:first-of-type a {
+  display: block;
+}
+
+footer .credits {
+  margin-top: 85px;
+  margin: auto;
+  width: calc((100% * 1 / 3) - 200px);
+  margin-top: 50px;
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #868686;
+}
+
+@media screen and (max-width: 950px) {
+  footer .travail {
+    display: none;
+  }
+  footer .credits {
+    margin-top: 45px;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,75 @@
+@import "./colors";
+
+
+
+
+
+
+.front-page {
+
+
+    #app {
+        height: 100vh;
+        position: relative;
+
+        content-visibility: auto;
+
+
+                
+
+        .background.groupe {
+
+            canvas {
+                
+                degra_canv {
+                    z-index: 3;
+                }
+            }
+        }
+
+
+      
+
+        
+        .social_networks {
+            margin-right: 50px;
+        }
+
+        .presentation {
+            position: absolute;
+            bottom: 0;
+            z-index: 5;
+
+            color: $beige;
+
+            text-transform: uppercase;
+
+            font-family: 'hypatia-sans-pro', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            
+            
+            margin-left: 50px;
+        }
+    }
+
+
+
+
+    
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 1600px) {
+
+
+
+    .background svg {
+        bottom: -5vh;
+    }
+}
