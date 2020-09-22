@@ -123,6 +123,48 @@ h6 {
   will-change: position, transform;
 }
 
+.boite {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.boite.b1 {
+  background-image: url(../src/assets/projets/presby.jpg);
+}
+
+.boite.b2 {
+  background-image: url(../src/assets/projets/icerolls.jpg);
+}
+
+.boite.b3 {
+  background-image: url(../src/assets/projets/pompettes.jpg);
+}
+
+.boite.b4 {
+  background-image: url(../src/assets/projets/boite_cadeaux.jpg);
+}
+
+.boite.b5 {
+  background-image: url(../src/assets/projets/marche_saveurs.jpg);
+}
+
+.boite.b6 {
+  background-image: url(../src/assets/projets/marie_papilles.jpg);
+}
+
+.boite.b7 {
+  background-image: url(../src/assets/projets/playing_life.jpg);
+}
+
+.boite.b8 {
+  background-image: url(../src/assets/projets/maison_famille_vg.jpg);
+}
+
+.boite.b9 {
+  background-image: url(../src/assets/projets/rassemblement_entre.jpg);
+}
+
 .social_networks {
   position: absolute;
   display: -webkit-box;

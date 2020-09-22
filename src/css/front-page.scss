@@ -8,7 +8,7 @@
 .front-page {
 
 
-    #app {
+    #app, .app {
         height: 100vh;
         position: relative;
 
@@ -54,6 +54,22 @@
     }
 
 
+    .img_etude_cas {
+        position: absolute;
+        
+        z-index: 5;
+        width: 1200px;
+        height: 660px;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+
+
+        background-image: url(../src/assets/etude_de_cas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
 
 
     

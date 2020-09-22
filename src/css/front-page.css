@@ -1,18 +1,18 @@
-.front-page #app {
+.front-page #app, .front-page .app {
   height: 100vh;
   position: relative;
   content-visibility: auto;
 }
 
-.front-page #app .background.groupe canvas degra_canv {
+.front-page #app .background.groupe canvas degra_canv, .front-page .app .background.groupe canvas degra_canv {
   z-index: 3;
 }
 
-.front-page #app .social_networks {
+.front-page #app .social_networks, .front-page .app .social_networks {
   margin-right: 50px;
 }
 
-.front-page #app .presentation {
+.front-page #app .presentation, .front-page .app .presentation {
   position: absolute;
   bottom: 0;
   z-index: 5;
@@ -22,6 +22,20 @@
   font-size: 18px;
   font-weight: 600;
   margin-left: 50px;
+}
+
+.front-page .img_etude_cas {
+  position: absolute;
+  z-index: 5;
+  width: 1200px;
+  height: 660px;
+  top: 50vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../src/assets/etude_de_cas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1600px) {

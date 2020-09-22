@@ -371,6 +371,48 @@ h6 {
   will-change: position, transform;
 }
 
+.boite {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.boite.b1 {
+  background-image: url(../src/assets/projets/presby.jpg);
+}
+
+.boite.b2 {
+  background-image: url(../src/assets/projets/icerolls.jpg);
+}
+
+.boite.b3 {
+  background-image: url(../src/assets/projets/pompettes.jpg);
+}
+
+.boite.b4 {
+  background-image: url(../src/assets/projets/boite_cadeaux.jpg);
+}
+
+.boite.b5 {
+  background-image: url(../src/assets/projets/marche_saveurs.jpg);
+}
+
+.boite.b6 {
+  background-image: url(../src/assets/projets/marie_papilles.jpg);
+}
+
+.boite.b7 {
+  background-image: url(../src/assets/projets/playing_life.jpg);
+}
+
+.boite.b8 {
+  background-image: url(../src/assets/projets/maison_famille_vg.jpg);
+}
+
+.boite.b9 {
+  background-image: url(../src/assets/projets/rassemblement_entre.jpg);
+}
+
 .social_networks {
   position: absolute;
   display: -webkit-box;
@@ -509,21 +551,21 @@ h6 {
   }
 }
 
-.front-page #app {
+.front-page #app, .front-page .app {
   height: 100vh;
   position: relative;
   content-visibility: auto;
 }
 
-.front-page #app .background.groupe canvas degra_canv {
+.front-page #app .background.groupe canvas degra_canv, .front-page .app .background.groupe canvas degra_canv {
   z-index: 3;
 }
 
-.front-page #app .social_networks {
+.front-page #app .social_networks, .front-page .app .social_networks {
   margin-right: 50px;
 }
 
-.front-page #app .presentation {
+.front-page #app .presentation, .front-page .app .presentation {
   position: absolute;
   bottom: 0;
   z-index: 5;
@@ -533,6 +575,20 @@ h6 {
   font-size: 18px;
   font-weight: 600;
   margin-left: 50px;
+}
+
+.front-page .img_etude_cas {
+  position: absolute;
+  z-index: 5;
+  width: 1200px;
+  height: 660px;
+  top: 50vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../src/assets/etude_de_cas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1600px) {
@@ -635,6 +691,74 @@ section.section_domaines {
   padding: 175px 0;
   height: 1600px;
   position: relative;
+}
+
+section.section_domaines.section_projets {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEF2D1), to(#FFFFFF));
+  background: linear-gradient(180deg, #FEF2D1 0%, #FFFFFF 100%);
+}
+
+section.section_domaines.section_projets .margin_supp {
+  margin: 0 100px;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite {
+  position: relative;
+  width: calc(100% * (4 / 12) - 1px);
+  min-width: 450px;
+  height: 450px;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite:nth-child(4n + 1) .texte {
+  background-color: #E7BA3F;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite:nth-child(4n + 2) .texte {
+  background-color: #EC5B5D;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite:nth-child(4n + 3) .texte {
+  background-color: #3E1739;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite:nth-child(4n + 4) .texte {
+  background-color: #10374F;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite .texte {
+  padding: 20px 15px;
+  max-width: 475px;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  display: inline-block;
+  background-color: #EC5B5D;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite .texte p {
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite .texte h4 {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
 }
 
 section.section_domaines .margin_supp {

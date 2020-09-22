@@ -119,6 +119,91 @@ section {
         height: 1600px;
 
         position: relative;
+
+
+
+        &.section_projets {
+            background: linear-gradient(180deg, $beige 0%, $blanc 100%);
+
+            & .margin_supp {
+                margin: 0 100px;
+
+                .flex_wrap_projets {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    a.boite {
+                        position: relative;
+
+                        width: calc(100% * (4 / 12) - 1px);
+                        min-width: 450px;
+                        
+                        height: 450px;
+
+                        &:nth-child(4n + 1) .texte {
+                            background-color: $dore;
+                        }
+
+                        &:nth-child(4n + 2) .texte {
+                            background-color: $rose;
+                        }
+
+                        &:nth-child(4n + 3) .texte {
+                            background-color: $mauve;
+                        }
+
+                        &:nth-child(4n + 4) .texte {
+                            background-color: $bleu;
+                        }
+
+                        .texte {
+
+                            padding: 20px 15px;
+
+                            max-width: 475px;
+
+                            position: absolute;
+                            bottom: 25px;
+                            left: 0;
+
+                            display: inline-block;
+
+                            background-color: $rose;
+                            
+
+                            p {
+                                font-family: 'hypatia-sans-pro', sans-serif;
+                                font-weight: 300;
+                                font-style: normal;
+                            
+                                font-size: 16px; 
+
+                                color: $blanc;
+
+                                text-transform: uppercase;
+
+                                margin: 0;
+                            }
+
+                            h4 {
+                                font-family: 'gravityWanders', sans-serif;
+                                font-size: 24px; 
+                                
+                                font-weight: 600;
+
+                                color: $blanc;
+
+                                margin: 0;
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+
+
+        }
     
         .margin_supp {
     

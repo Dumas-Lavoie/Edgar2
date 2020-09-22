@@ -94,6 +94,74 @@ section.section_domaines {
   position: relative;
 }
 
+section.section_domaines.section_projets {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEF2D1), to(#FFFFFF));
+  background: linear-gradient(180deg, #FEF2D1 0%, #FFFFFF 100%);
+}
+
+section.section_domaines.section_projets .margin_supp {
+  margin: 0 100px;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite {
+  position: relative;
+  width: calc(100% * (4 / 12) - 1px);
+  min-width: 450px;
+  height: 450px;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite:nth-child(4n + 1) .texte {
+  background-color: #E7BA3F;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite:nth-child(4n + 2) .texte {
+  background-color: #EC5B5D;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite:nth-child(4n + 3) .texte {
+  background-color: #3E1739;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite:nth-child(4n + 4) .texte {
+  background-color: #10374F;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite .texte {
+  padding: 20px 15px;
+  max-width: 475px;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  display: inline-block;
+  background-color: #EC5B5D;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite .texte p {
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+section.section_domaines.section_projets .margin_supp .flex_wrap_projets a.boite .texte h4 {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+}
+
 section.section_domaines .margin_supp {
   margin: 0 200px 0 100px;
 }
