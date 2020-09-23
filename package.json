@@ -4,7 +4,7 @@
   "description": "Article: \nhttps://tympanus.net/codrops/2019/10/08/creating-a-water-like-distortion-effect-with-three-js/",
   "main": "index.html",
   "scripts": {
-    "start": "parcel *.html --open --log-level 3",
+    "start": "parcel *.html --open --no-hmr",
     "build": "parcel build *.html --detailed-report"
   },
   "dependencies": {

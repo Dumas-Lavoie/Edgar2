@@ -123,6 +123,8 @@ section {
 
 
         &.section_projets {
+            display: table;
+
             background: linear-gradient(180deg, $beige 0%, $blanc 100%);
 
             & .margin_supp {
@@ -461,4 +463,21 @@ section {
             width: 100%;
         }
     } 
+
+    section.section_domaines.section_projets {
+        .wrap {
+            padding: 0;
+
+            .margin_supp {
+                margin: 0;
+
+                .flex_wrap_projets {
+                    a.boite {
+                        width: 100vw;
+                        min-width: unset;
+                    }
+                }
+            }
+        }
+    }
 }

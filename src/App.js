@@ -1,4 +1,4 @@
-import "./styles.css";
+//
 import * as THREE from "three";
 import { Text } from "./Text";
 import TouchTexture from "./TouchTexture";
@@ -226,6 +226,8 @@ export class App {
     );
     let x = -viewSize.width / 2 + width / 2 + viewSize.width / 5 / 1.5;
 
+
+    // ICI POUR LE WIDTH 
     let space = (viewSize.width - (viewSize.width / 5 / 1.5) * 2 - width) / 2;
     for (let i = 0; i < 3; i++) {
       const material = new THREE.MeshBasicMaterial({ color: 0x484848 });

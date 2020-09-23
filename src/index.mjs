@@ -1,4 +1,5 @@
 import { App } from "./App";
+import { otherApp } from "./otherApp";
 
 const myApp = new App();
 

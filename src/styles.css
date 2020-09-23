@@ -694,6 +694,7 @@ section.section_domaines {
 }
 
 section.section_domaines.section_projets {
+  display: table;
   background: -webkit-gradient(linear, left top, left bottom, from(#FEF2D1), to(#FFFFFF));
   background: linear-gradient(180deg, #FEF2D1 0%, #FFFFFF 100%);
 }
@@ -955,6 +956,16 @@ section.ruban:after {
   section.section_cafe .mission {
     font-size: 25px;
     width: 100%;
+  }
+  section.section_domaines.section_projets .wrap {
+    padding: 0;
+  }
+  section.section_domaines.section_projets .wrap .margin_supp {
+    margin: 0;
+  }
+  section.section_domaines.section_projets .wrap .margin_supp .flex_wrap_projets a.boite {
+    width: 100vw;
+    min-width: unset;
   }
 }
 
