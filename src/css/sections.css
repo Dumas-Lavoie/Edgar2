@@ -1,0 +1,293 @@
+section.section_cafe {
+  width: 100vw;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  cursor: default;
+  position: relative;
+  z-index: 3;
+}
+
+section.section_cafe .margin_supp {
+  margin: 0 200px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+section.section_cafe .flex_cafe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.section_cafe .flex_cafe:first-of-type p {
+  width: 900px;
+}
+
+section.section_cafe .sous_titre {
+  position: relative;
+  left: -10px;
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #10374F;
+}
+
+section.section_cafe .mission {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 60px;
+  line-height: 70px;
+  color: #10374F;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 1300px;
+}
+
+section.section_cafe .macaron {
+  position: relative;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+section.section_cafe .macaron .contour {
+  width: 220px;
+  height: 220px;
+  background-image: url(../src/assets/prendre_cafe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: rotating 15s linear infinite;
+          animation: rotating 15s linear infinite;
+  position: relative;
+}
+
+@-webkit-keyframes rotating {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+section.section_cafe .macaron .fleche {
+  width: 30px;
+  height: 50px;
+  background-image: url(../src/assets/fleche.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+section.section_domaines {
+  background-color: #FEF2D1;
+  cursor: default;
+  padding: 175px 0;
+  height: 1600px;
+  position: relative;
+}
+
+section.section_domaines .margin_supp {
+  margin: 0 200px 0 100px;
+}
+
+section.section_domaines .margin_supp .flex_domaines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section_domaines .margin_supp .flex_domaines .presentation_domaines {
+  position: relative;
+}
+
+section.section_domaines .margin_supp .flex_domaines .presentation_domaines span {
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section.section_domaines .margin_supp .flex_domaines .presentation_domaines h3 {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 144px;
+  font-weight: normal;
+  color: #EC5B5D;
+  margin: 0;
+  line-height: 80px;
+}
+
+section.section_domaines .margin_supp .flex_domaines .presentation_domaines p:nth-of-type(1) {
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #10374F;
+  margin-bottom: 40px;
+  position: relative;
+  left: -10px;
+}
+
+section.section_domaines .margin_supp .flex_domaines .presentation_domaines p:nth-of-type(2) {
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 24px;
+  width: 500px;
+  font-style: italic;
+  color: #10374F;
+}
+
+section.section_domaines .margin_supp .flex_domaines .presentation_domaines a {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 30px;
+  color: #10374F;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+section.section_domaines .margin_supp .flex_domaines .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 700px;
+}
+
+section.section_domaines .margin_supp .flex_domaines .img.branding {
+  background-image: url(../src/assets/branding.jpg);
+}
+
+section.section_domaines .margin_supp .flex_domaines .img.web {
+  background-image: url(../src/assets/web.jpg);
+}
+
+section.ruban {
+  overflow: auto;
+  cursor: default;
+  overflow-x: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 15px 0;
+  margin: 0 auto;
+  background-color: #3E1739;
+}
+
+section.ruban span {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-block;
+  padding-left: 100%;
+  -webkit-animation: ruban_anim 40s linear infinite;
+          animation: ruban_anim 40s linear infinite;
+}
+
+section.ruban span.ruban_anim2 {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+@-webkit-keyframes ruban_anim {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+
+@keyframes ruban_anim {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+
+section.ruban:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 1600px) {
+  section.section_cafe .macaron {
+    margin: auto;
+  }
+  section.section_cafe .margin_supp {
+    margin: 0 100px;
+  }
+  section.section_cafe .flex_cafe {
+    display: unset;
+  }
+  section.section_cafe .mission {
+    font-size: 50px;
+    width: 75vw;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
+  section.section_cafe .margin_supp {
+    margin: 0;
+  }
+  section.section_domaines .margin_supp .flex_domaines {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  section.section_cafe {
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+  section.section_domaines .margin_supp {
+    margin: 0;
+  }
+  section.section_domaines .margin_supp .flex_domaines .presentation_domaines h3 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section.section_cafe {
+    padding-top: 100px;
+    padding-bottom: 350px;
+  }
+  section.section_cafe.deuxieme {
+    padding-bottom: 200px;
+  }
+  .background svg {
+    width: 120%;
+  }
+  .front-page #app .social_networks {
+    margin-right: 10px;
+  }
+  .front-page #app .presentation {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section.section_cafe .mission {
+    font-size: 25px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=sections.css.map */

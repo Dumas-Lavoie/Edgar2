@@ -1,0 +1,252 @@
+@import "./colors";
+
+@font-face {
+  font-family: gravityWanders;
+  src: url(assets/fonts/gravity_wanders-webfont.woff);
+}
+
+@font-face {
+  font-family: gravityWanders2;
+  src: url(assets/fonts/gravity_wanders-webfont.woff2);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+#cursor {
+  position: absolute;
+  background-color: #222;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: scale(1);
+  mix-blend-mode: difference;
+}
+
+#cursorFollow {
+  position: absolute;
+  background-color: rgba(218, 68, 83, 0.7);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: luminosity;
+
+  &.active {
+    transform: scale(2);
+  }
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+
+  &.preventOverflow {
+    overflow: hidden;
+  }
+
+  & .site_background {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+}
+
+#webGLApp {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 5;
+}
+
+img {
+  position: absolute;
+}
+
+.background svg {
+  width: 110%;
+  height: auto;
+  position: absolute;
+
+  left: -75px;
+  bottom: -25px;
+
+  z-index: 5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h6 {
+  margin-top: 20px;
+}
+
+.wrap {
+  max-width: 1800px;
+  padding: 0 100px;
+  margin: auto;
+}
+
+.margin_supp {
+  margin: 0 150px;
+}
+
+// Sticky-sidebar.js
+.sidebar {
+  will-change: min-height;
+}
+
+section p.sous_titre {
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $bleu;
+
+  position: relative;
+  left: -15px;
+  margin: 0px 0 25px 0;
+}
+
+.presentation_domaines a {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 30px;
+
+  color: $bleu;
+
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  cursor: pointer;
+
+  span.fake_border {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 100%;
+    background: $bleu;
+
+    transition: transform .2s cubic-bezier(.075, .82, .165, 1), -webkit-transform .2s cubic-bezier(.075, .82, .165, 1);
+  }
+
+  span.horizontal_bar {
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    height: 3px;
+    width: 25px;
+
+    background: $bleu;
+
+    transform-origin: left center;
+
+    transform: scale3d(0, 1, 0);
+
+    transition-delay: 0s;
+
+    transition: transform .3s cubic-bezier(.075, .82, .165, 1), -webkit-transform .3s cubic-bezier(.075, .82, .165, 1);
+  }
+
+  svg {
+
+    width: 10px;
+
+    top: 50%;
+    left: -4px;
+    position: absolute;
+
+    width: .625rem;
+    height: 1.0625rem;
+    margin-top: 1px;
+
+    transition: transform .3s cubic-bezier(.075, .82, .165, 1), -webkit-transform .3s cubic-bezier(.075, .82, .165, 1);
+
+    -webkit-transform: translate3d(0, -50%, 0) scale3d(0, 0, 1);
+    transform: translate3d(0, -50%, 0) scale3d(0, 0, 1);
+  }
+
+  span.lien_fleche {
+    font-family: 'gravityWanders', sans-serif;
+    font-size: 30px;
+
+    color: $bleu;
+  }
+
+  &:hover {
+
+    .fake_border {
+      transform: scale3d(1, 0, 1);
+
+      transition-delay: 0s;
+    }
+
+    span.horizontal_bar {
+      transform: scale3d(1, 1, 1);
+      transition-delay: .15s;
+    }
+
+    svg {
+      transform: translate3d(1.375rem, -50%, 0) scale3d(1, 1, 1);
+
+      transition-delay: .15s;
+    }
+
+    .lien_fleche {
+      transform: scale3d(1, 1, 1);
+    }
+
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .wrap {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .wrap {
+    padding: 0 50px;
+  }
+}
+
+@keyframes liens_fleche {
+  from {
+
+  }
+
+  to {
+
+  }
+}
