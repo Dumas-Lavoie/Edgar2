@@ -96,12 +96,17 @@ export class App {
     
       text.updateText(this.data.text[i]);
 
+      if ($('.fullpage_menu').hasClass('open')) {
+        
+      }
 
-      if (i < this.data.text.length) {
+      else if (i < this.data.text.length) {
         window.addEventListener("click", () => {
-          //window.location.replace(this.data.url[i]);
+          window.open(this.data.url[i]);
         });
       }
+
+
   }
 
 
