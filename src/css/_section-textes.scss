@@ -1,0 +1,201 @@
+@import "./colors";
+
+section.section_texte {
+  width: 100vw;
+
+  padding-top: 200px;
+  padding-bottom: 240px;
+
+  cursor: default;
+
+  position: relative;
+
+  z-index: 3;
+
+  .margin_supp {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+
+  .flex_cafe {
+    display: flex;
+    align-items: center;
+  }
+
+  .texte {
+    margin-bottom: 45px;
+  }
+
+  .mission {
+    font-family: 'gravityWanders', sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    color: $bleu;
+    margin: 0;
+    margin-right: 100px;
+
+  }
+
+  .macaron {
+    width: 220px;
+    height: 220px;
+    display: block;
+    position: relative;
+
+    cursor: pointer;
+
+    margin-left: 0;
+    top: -10px;
+
+    .contour {
+      width: 220px;
+      height: 220px;
+
+      background-image: url(../src/assets/prendre_cafe.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      animation: rotating 15s linear infinite;
+
+      position: relative;
+
+      @-moz-keyframes rotating {
+        100% {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes rotating {
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    .fleche {
+      width: 30px;
+      height: 50px;
+
+      background-image: url(../src/assets/fleche.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+
+      transition: .2s all;
+    }
+
+    &:hover {
+      .fleche {
+        transform: translate(-30%, -50%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+
+  section.section_texte {
+
+    .macaron {
+      top: -25px;
+    }
+
+    .margin_supp {
+      margin: 0 100px;
+    }
+
+    .mission {
+      font-size: 50px;
+
+      width: 75vw;
+
+      margin-bottom: 80px;
+    }
+
+    .margin_supp {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  section.section_texte {
+    .macaron {
+      top: -50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section.section_texte {
+
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  section.section_texte {
+    padding-top: 150px;
+    padding-bottom: 200px;
+
+    .flex_cafe {
+      display: unset;
+    }
+
+    .macaron {
+      top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  section.section_texte {
+    padding-top: 100px;
+    padding-bottom: 350px;
+
+    .mission {
+      font-size: 40px;
+      line-height: 52px;
+      margin-bottom: 45px;
+    }
+
+    .macaron {
+      width: 150px;
+      height: 150px;
+
+      .contour {
+        width: 150px;
+        height: 150px;
+      }
+
+      .fleche {
+        width: 20px;
+        height: 32px;
+      }
+    }
+
+    &.deuxieme {
+      padding-bottom: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  section.section_texte {
+    .mission {
+      font-size: 25px;
+      width: 100%;
+    }
+  }
+}

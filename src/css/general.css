@@ -110,100 +110,23 @@ h6 {
   margin: auto;
 }
 
+.margin_supp {
+  margin: 0 150px;
+}
+
 .sidebar {
   will-change: min-height;
 }
 
-.sidebar__inner {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  /* For browsers don't support translate3d. */
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  will-change: position, transform;
-}
-
-.boite {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.boite.b1 {
-  background-image: url(../src/assets/projets/presby.jpg);
-}
-
-.boite.b2 {
-  background-image: url(../src/assets/projets/icerolls.jpg);
-}
-
-.boite.b3 {
-  background-image: url(../src/assets/projets/pompettes.jpg);
-}
-
-.boite.b4 {
-  background-image: url(../src/assets/projets/boite_cadeaux.jpg);
-}
-
-.boite.b5 {
-  background-image: url(../src/assets/projets/marche_saveurs.jpg);
-}
-
-.boite.b6 {
-  background-image: url(../src/assets/projets/marie_papilles.jpg);
-}
-
-.boite.b7 {
-  background-image: url(../src/assets/projets/playing_life.jpg);
-}
-
-.boite.b8 {
-  background-image: url(../src/assets/projets/maison_famille_vg.jpg);
-}
-
-.boite.b9 {
-  background-image: url(../src/assets/projets/rassemblement_entre.jpg);
-}
-
-.social_networks {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-}
-
-.social_networks .links {
-  color: #FEF2D1;
-  margin-right: 10px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+section p.sous_titre {
   font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 20px;
   font-weight: 600;
-  font-style: normal;
-  font-size: 18px;
-}
-
-.social_networks .links:nth-of-type(1):hover {
-  color: #E7BA3F;
-}
-
-.social_networks .links:nth-of-type(2):hover {
-  color: #3E1739;
-}
-
-.social_networks .links:nth-of-type(3):hover {
+  text-transform: uppercase;
   color: #10374F;
-  margin-right: 0;
-}
-
-.social_networks .links.no_margin {
-  margin: 0;
+  position: relative;
+  left: -15px;
+  margin: 0px 0 25px 0;
 }
 
 .presentation_domaines a {
@@ -214,11 +137,14 @@ h6 {
   cursor: pointer;
 }
 
-.ctn_fake_border {
+.btn {
   position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  cursor: pointer;
 }
 
-.ctn_fake_border span.fake_border {
+.btn span.fake_border {
   position: absolute;
   left: 0;
   top: 0;
@@ -228,7 +154,7 @@ h6 {
   transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.ctn_fake_border span.horizontal_bar {
+.btn span.horizontal_bar {
   position: absolute;
   left: 0;
   top: 50%;
@@ -244,7 +170,7 @@ h6 {
   transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.ctn_fake_border svg {
+.btn svg {
   width: 10px;
   top: 50%;
   left: -4px;
@@ -257,30 +183,42 @@ h6 {
   transform: translate3d(0, -50%, 0) scale3d(0, 0, 1);
 }
 
-.ctn_fake_border:hover .fake_border {
+.btn span.lien_fleche {
+  font-family: 'gravityWanders', sans-serif;
+  font-size: 30px;
+  color: #10374F;
+}
+
+.btn:hover .fake_border {
   -webkit-transform: scale3d(1, 0, 1);
           transform: scale3d(1, 0, 1);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 
-.ctn_fake_border:hover span.horizontal_bar {
+.btn:hover span.horizontal_bar {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
   -webkit-transition-delay: .15s;
           transition-delay: .15s;
 }
 
-.ctn_fake_border:hover svg {
+.btn:hover svg {
   -webkit-transform: translate3d(1.375rem, -50%, 0) scale3d(1, 1, 1);
           transform: translate3d(1.375rem, -50%, 0) scale3d(1, 1, 1);
   -webkit-transition-delay: .15s;
           transition-delay: .15s;
 }
 
-.ctn_fake_border:hover .lien_fleche {
+.btn:hover .lien_fleche {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap {
+    padding: 0 60px;
+  }
 }
 
 @media screen and (max-width: 450px) {

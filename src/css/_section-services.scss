@@ -1,0 +1,146 @@
+@import "./colors";
+
+.section_services {
+  background-color: $beige;
+  cursor: default;
+  position: relative;
+
+  .service {
+    display: flex;
+    align-items: center;
+    padding: 200px 0;
+    position: sticky;
+    top: 0;
+
+    &.visible {
+      .sidebar {
+        opacity: 1;
+      }
+    }
+  }
+
+  h3 {
+    font-family: 'gravityWanders', sans-serif;
+    font-size: 144px;
+    line-height: 0.8;
+    font-weight: normal;
+
+    color: $rose;
+
+    margin: 0;
+  }
+
+  p {
+    font-family: 'hypatia-sans-pro', sans-serif;
+    font-size: 24px;
+    width: 500px;
+
+    color: $bleu;
+  }
+
+  a {
+    font-family: 'gravityWanders', sans-serif;
+    font-size: 30px;
+
+    color: $bleu;
+
+    padding-left: 40px;
+
+    cursor: pointer;
+  }
+
+  .sidebar {
+    width: calc(100% * (9 / 14) - 10px);
+    display: inline-block;
+
+    transition: .5s all;
+    opacity: 0;
+  }
+
+  .content {
+    width: calc(100% * (5 / 14) - 1px);
+    display: inline-block;
+  }
+
+  .img {
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 650px;
+
+    position: relative;
+
+
+    img {
+      top: 50%;
+      transform: translate(-50%, -70%);
+    }
+
+    &.branding {
+      background-image: url(../src/assets/branding.jpg);
+
+      img {
+        left: calc(50% + 20px);
+        width: 220px;
+      }
+    }
+
+    &.web {
+      background-image: url(../src/assets/web.jpg);
+
+      img {
+        left: 50%;
+        width: 235px;
+
+      }
+    }
+
+    &.strategie {
+      background-image: url(../src/assets/strategie.jpg);
+
+      img {
+        left: calc(50% + 10px);
+        width: 200px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1600px) {
+
+  .section_services {
+
+    .margin_supp .flex_domaines {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  .section_services {
+    .margin_supp {
+      margin: 0;
+
+      .flex_domaines {
+
+        .presentation_domaines {
+
+          h3 {
+            font-size: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+}
+
+@media screen and (max-width: 450px) {
+
+}

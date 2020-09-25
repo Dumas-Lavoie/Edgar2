@@ -1,91 +1,99 @@
 @import "./colors";
 
-
-
-
-
-
 .front-page {
 
+  #app {
+    height: 100vh;
+    position: relative;
 
-    #app, .app {
-        height: 100vh;
+    content-visibility: auto;
+
+    .background.groupe {
+
+      canvas {
+
+        degra_canv {
+          z-index: 3;
+        }
+      }
+    }
+
+
+    .social_networks {
+      display: flex;
+      align-items: center;
+      z-index: 7;
+      position: absolute;
+      bottom: 60px;
+      right: 60px;
+
+      .links {
+        color: $beige;
+
+        margin-right: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition: 0.3s;
+
+        font-family: 'hypatia-sans-pro', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+        font-size: 18px;
+
+        &:hover {
+          color: $bleu;
+        }
+
+        &.no_margin {
+          margin: 0;
+        }
+      }
+
+      p.links {
+        top: -1px;
         position: relative;
-
-        content-visibility: auto;
-
-
-                
-
-        .background.groupe {
-
-            canvas {
-                
-                degra_canv {
-                    z-index: 3;
-                }
-            }
-        }
-
-
-      
-
-        
-        .social_networks {
-            margin-right: 50px;
-        }
-
-        .presentation {
-            position: absolute;
-            bottom: 0;
-            z-index: 5;
-
-            color: $beige;
-
-            text-transform: uppercase;
-
-            font-family: 'hypatia-sans-pro', sans-serif;
-            font-size: 18px;
-            font-weight: 600;
-            
-            
-            margin-left: 50px;
-        }
+      }
     }
 
 
-    .img_etude_cas {
-        position: absolute;
-        
-        z-index: 5;
-        width: 1200px;
-        height: 660px;
-        top: 50vh;
-        left: 50%;
-        transform: translate(-50%, -50%); 
+    .presentation {
+      position: absolute;
+      bottom: 60px;
+      left: 60px;
+      z-index: 7;
 
+      color: $beige;
 
-        background-image: url(../src/assets/etude_de_cas.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+      text-transform: uppercase;
 
+      font-family: 'hypatia-sans-pro', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+
+      p {
+        margin: 0;
+      }
     }
-
-
-    
-
-
-
+  }
 
 }
 
-
-
 @media screen and (max-width: 1600px) {
 
+  .background svg {
+    bottom: -5vh;
+  }
+}
 
+@media screen and (max-width: 650px) {
 
-    .background svg {
-        bottom: -5vh;
-    }
+  .background svg {
+    width: 120%;
+  }
+
+  .front-page #app .social_networks, .front-page #app .presentation {
+    display: none;
+  }
+
 }

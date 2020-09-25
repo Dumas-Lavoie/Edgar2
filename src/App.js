@@ -101,9 +101,7 @@ export class App {
       }
 
       else if (i < this.data.text.length) {
-        window.addEventListener("click", () => {
-          window.open(this.data.url[i]);
-        });
+
       }
 
 
