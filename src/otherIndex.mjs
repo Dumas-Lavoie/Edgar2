@@ -1,3 +1,4 @@
+import "./styles.css";
 import { otherApp } from "./otherApp";
 
-const myApp = new otherApp();
+let myApp = new otherApp();

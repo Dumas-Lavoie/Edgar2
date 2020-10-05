@@ -53,7 +53,7 @@ export class Planes {
 
     let space = planeMetrics.space;
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 1; i++) {
       let texture = this.textures[i];
       const material = new THREE.ShaderMaterial({
         uniforms: {
@@ -90,42 +90,9 @@ export class Planes {
         intersection.uv.y
       );
       document.body.style.cursor = "pointer";
-      if (this.hovering !== index) {
-        this.sceneManager.onPlaneHover(index);
-
-        window.onclick = () => {
-          if (!$('.hamburger').hasClass('open')) 
-          {
-            if (index == 0)
-            {
-              window.open("https://www.google.ca", "_blank");
-          
-            }
-            if (index == 1) {
-              window.open("https://presbyterebluesea.ca/", "_blank");
-              
-            }
-           if (index == 2) {
-              window.open("https://spiraleicerolls.com/", "_blank");
-             
-            }
-            else {
-              console.log("OUT"); 
-            }
-            
-          }
-        }
-        this.hovering = index;
-      } 
-      
-      
-      
-
-      
-  
+      if (this.hovering !== index) this.sceneManager.onPlaneHover(index);
+      this.hovering = index;
     } else {
-      window.onclick = () => { }
-      this.sceneManager.onPlaneNever();
       this.hovering = -1;
       document.body.style.cursor = "default";
       
@@ -133,7 +100,7 @@ export class Planes {
   }
   update() {
     const meshes = this.meshes;
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 1; i++) {
       const zoomTarget = this.hovering === i ? 1 : 0;
       const uZoom = meshes[i].material.uniforms.uZoom;
 
@@ -145,14 +112,14 @@ export class Planes {
     }
   }
   getPlaneMetrics(viewWidth, viewHeight, width, height) {
-    const planeWidth = viewWidth / 4.5;
+    const planeWidth = viewWidth / 1.395;
     if (width < 800) {
       return {
-        planeWidth: viewWidth / 3,
+        planeWidth: viewWidth / 1,
         planeHeight: viewHeight * 0.8,
         x: 0,
         // Calculate the resting(empty) space and divided by number of planes
-        space: viewWidth / 3
+        space: viewWidth / 1
       };
     }
     return {

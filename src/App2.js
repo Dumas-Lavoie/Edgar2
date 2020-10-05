@@ -1,10 +1,9 @@
-import "./styles.css";
 import * as THREE from "three";
 import { Text } from "./Text";
 import TouchTexture from "./TouchTexture";
 import { EffectComposer, RenderPass, EffectPass } from "postprocessing";
 import { WaterEffect } from "./WaterEffect";
-import { Planes } from "./Planes";
+import { Planes } from "./Planes2";
 
 console.clear();
 // https://unsplash.com/photos/sqSYr_xXeCw
@@ -16,7 +15,7 @@ const image3 = require("./static/image-3.jpg");
 
 const etude = require("./static/etude_de_cas.jpg");
 
-let images = [image1, image2, image3];
+let images = [etude, image2, image3];
 
 
 export class App {
@@ -60,14 +59,14 @@ export class App {
     this.touchTexture = new TouchTexture();
 
     this.data = {
-      text: ["POMPETTES \n PROD.", "PRESBYTERE \n BLUE SEA", "SPIRALE \n ICE ROLLS" ],
+      text: ["ETUDES DE CAS", "PRESBYTERE \n BLUE SEA", "SPIRALE \n ICE ROLLS" ],
       url: ["https://www.google.ca", "https://presbyterebluesea.ca/", "https://spiraleicerolls.com/" ],
       images: images
     };
 
     this.subjects = [
       new Planes(this, images),
-      new Text(this, this.data.text[1])
+      new Text(this, this.data.text[0])
     ];
     
 
@@ -100,11 +99,17 @@ export class App {
     const text = this.subjects[1];
     
       text.updateText(this.data.text[i]);
-  }
 
-  onPlaneNever() {
-    const text = this.subjects[1];
-    text.updateText('');
+      if ($('.fullpage_menu').hasClass('open')) {
+        
+      }
+
+
+      else if (i < this.data.text.length) {
+
+      }
+
+
   }
 
 
@@ -233,7 +238,7 @@ export class App {
     // ICI POUR LE WIDTH 
     let space = (viewSize.width - (viewSize.width / 5 / 1.5) * 2 - width) / 2;
       
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 1; i++) {
       const material = new THREE.MeshBasicMaterial({ color: 0x484848 });
       const mesh = new THREE.Mesh(geometry, material);
       mesh.position.x += x + i * space;
