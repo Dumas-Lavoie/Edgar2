@@ -82,7 +82,7 @@ export class Planes {
   onMouseMove(ev) {
     const raycaster = this.sceneManager.raycaster;
     var intersections = raycaster.intersectObjects(this.meshes);
-    if (intersections.length > 0) {
+    if (intersections.length > 0  && ($(window).scrollTop() < 500)) {
       const intersection = intersections[0];
       const index = intersection.object.userData.index;
       this.meshes[index].material.uniforms.uMouse.value.set(
@@ -90,6 +90,7 @@ export class Planes {
         intersection.uv.y
       );
       document.body.style.cursor = "pointer";
+
       if (this.hovering !== index) {
         this.sceneManager.onPlaneHover(index);
 
