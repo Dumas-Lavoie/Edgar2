@@ -19,7 +19,7 @@ let images = [etude, image2, image3];
 
 
 export class App {
-  constructor() {
+  constructor(option) {
 
     
 

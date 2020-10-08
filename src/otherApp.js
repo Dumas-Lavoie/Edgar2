@@ -6,17 +6,15 @@ var path = window.location.pathname;
 var page = path.split("/").pop();
 console.log( page );
 
-let createApp = () => {
+let createApp = (opt) => {
     let test = new App();
  }
 
 export class otherApp { 
     
-    constructor () {
+    constructor (option) {
         
-        console.log("TEST");    
-        this.app = createApp();
+           
+        this.app = createApp(option);
     }
-    
-    
  }
