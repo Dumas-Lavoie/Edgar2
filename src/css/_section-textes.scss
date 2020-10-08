@@ -17,11 +17,6 @@ section.section_texte {
     margin-left: 150px;
   }
 
-  .flex_cafe {
-    display: flex;
-    align-items: center;
-  }
-
   .texte {
     margin-bottom: 45px;
   }
@@ -115,7 +110,7 @@ section.section_texte {
 
     .mission {
       font-size: 50px;
-
+      line-height: 56px;
       width: 75vw;
 
       margin-bottom: 80px;
@@ -130,7 +125,8 @@ section.section_texte {
 @media screen and (max-width: 1400px) {
   section.section_texte {
     .macaron {
-      top: -50px;
+      margin: 0;
+      top: 0;
     }
   }
 }
