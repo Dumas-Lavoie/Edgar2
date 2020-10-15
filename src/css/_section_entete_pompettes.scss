@@ -1,9 +1,9 @@
-.entete_pompette {
+.entete {
     display: flex;
     flex-direction: row;
 }
 
-.entete_pompette>* {
+.entete>* {
     justify-content: space-between;
 }
 
@@ -22,11 +22,22 @@
 
 .sous_para>* {
     padding: 10px;
+    width: fit-content;
 }
 
 .sous_para>p {
     flex: 33.33%;
     justify-content: space-between;
+}
+
+
+/*
+.sous_para span:nth-child(3) {
+    margin-top: 6px;
+}*/
+
+.sous_para ul {
+    list-style-type: none;
 }
 
 .separateur {
