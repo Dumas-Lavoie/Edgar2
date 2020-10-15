@@ -1,0 +1,38 @@
+.entete_pompette {
+    display: flex;
+    flex-direction: row;
+}
+
+.entete_pompette>* {
+    justify-content: space-between;
+}
+
+.para {
+    flex: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+
+.para>* {}
+
+.sous_para {
+    display: flex;
+    flex-direction: row;
+}
+
+.sous_para>* {
+    padding: 10px;
+}
+
+.sous_para>p {
+    flex: 33.33%;
+    justify-content: space-between;
+}
+
+.separateur {
+    width: 90px;
+    border-bottom: 1px solid black;
+    height: 4px;
+    flex: 33.33%;
+    display: inline-block;
+}
