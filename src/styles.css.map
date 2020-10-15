@@ -16,7 +16,8 @@
         "css/_section-services.scss",
         "css/colors.scss",
         "css/footer.scss",
-        "css/colors.scss"
+        "css/colors.scss",
+        "css/_section_entete_pompettes.scss"
     ],
     "names": [],
     "file": "styles.css"
