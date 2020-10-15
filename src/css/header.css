@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header {
   position: fixed;
   width: 100%;
@@ -5,6 +6,8 @@
   mix-blend-mode: difference;
 }
 
+=======
+>>>>>>> 0f0b8382f86fdb588ef41503bfb8cc93040791c7
 header.open {
   z-index: 6;
 }
@@ -34,7 +37,11 @@ header .hamburger .line {
   display: block;
   width: 100%;
   height: 3px;
+<<<<<<< HEAD
   background-color: #FFFFFF;
+=======
+  background-color: #FEF2D1;
+>>>>>>> 0f0b8382f86fdb588ef41503bfb8cc93040791c7
   position: absolute;
   top: 48%;
   left: 51%;
