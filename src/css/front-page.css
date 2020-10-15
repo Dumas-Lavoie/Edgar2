@@ -1,0 +1,80 @@
+.front-page #app {
+  height: 100vh;
+  position: relative;
+  content-visibility: auto;
+}
+
+.front-page #app .background.groupe canvas degra_canv {
+  z-index: 3;
+}
+
+.front-page #app .social_networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 7;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+}
+
+.front-page #app .social_networks .links {
+  color: #FEF2D1;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.front-page #app .social_networks .links:hover {
+  color: #10374F;
+}
+
+.front-page #app .social_networks .links.no_margin {
+  margin: 0;
+}
+
+.front-page #app .social_networks p.links {
+  top: -1px;
+  position: relative;
+}
+
+.front-page #app .presentation {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 7;
+  color: #FEF2D1;
+  text-transform: uppercase;
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.front-page #app .presentation p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .background svg {
+    bottom: -5vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .background svg {
+    width: 120%;
+  }
+  .front-page #app .social_networks, .front-page #app .presentation {
+    display: none;
+  }
+}
+/*# sourceMappingURL=front-page.css.map */

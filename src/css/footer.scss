@@ -1,0 +1,103 @@
+@import "./colors";
+
+footer {
+  cursor: default;
+
+  padding: 90px 0;
+
+  position: relative;
+
+  .travail_ensemble {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    .margin_supp {
+
+      margin: 0 100px;
+    }
+
+    .travail {
+      text-align: center;
+
+      flex: 2;
+
+      a {
+        font-family: 'gravityWanders', sans-serif;
+        font-size: 90px;
+
+        color: $bleu;
+        line-height: 92px;
+        cursor: pointer;
+
+        &:after {
+          content: '?';
+          display: inline-block;
+          transform: rotate(0) scale(1);
+          transition: .2s all;
+        }
+
+        &:hover {
+          &:after {
+            transform: rotate(10deg) scale(1.1);
+          }
+        }
+      }
+    }
+
+    .infos {
+      flex: 1;
+
+      text-align: right;
+
+      a, p {
+        font-family: 'hypatia-sans-pro', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+
+        color: $bleu;
+      }
+
+      &:first-of-type {
+        text-align: left;
+
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .credits {
+    margin: auto;
+    margin-top: 50px;
+
+    width: 100%;
+    text-align: center;
+
+    font-family: 'hypatia-sans-pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+    color: $gris;
+
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  footer {
+
+    .travail {
+      display: none;
+    }
+
+    .credits {
+      margin-top: 45px;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+}
