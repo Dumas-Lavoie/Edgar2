@@ -13,8 +13,6 @@
     justify-content: center;
 }
 
-.para>* {}
-
 .sous_para {
     display: flex;
     flex-direction: row;
@@ -30,14 +28,8 @@
     justify-content: space-between;
 }
 
-
-/*
 .sous_para span:nth-child(3) {
     margin-top: 6px;
-}*/
-
-.sous_para ul {
-    list-style-type: none;
 }
 
 .separateur {
@@ -46,4 +38,24 @@
     height: 4px;
     flex: 33.33%;
     display: inline-block;
+}
+
+.list_expertise {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    padding-left: 10px;
+}
+
+.footer_entete {
+    border-left: 4px solid black;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_entete p:nth-child(1) {
+    flex: 0 0 81.2%;
+    padding-left: 20px;
+    margin: auto 0;
 }
