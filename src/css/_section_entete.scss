@@ -13,6 +13,13 @@
     src: url(assets/fonts/gravity_wanders-webfont.woff);
 }
 
+
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
 .entete {
     display: flex;
     flex-direction: row;
@@ -25,9 +32,10 @@
 .para {
     flex: 33.33%;
     display: flex;
-    justify-content: center;
 }
 
+
+/*
 .sous_para {
     display: flex;
     flex-direction: row;
@@ -35,7 +43,7 @@
 
 .sous_para>* {
     padding: 10px;
-    width: fit-content;
+    width: 40%;
 }
 
 .sous_para>p {
@@ -50,13 +58,14 @@
 .sous_para span:nth-child(3) {
     margin-top: 6px;
 }
+*/
 
 .separateur {
     width: 90px;
     border-bottom: 1px solid black;
     height: 4px;
-    flex: 33.33%;
-    display: inline-block;
+    /*display: inline-block;*/
+    margin: 8px;
 }
 
 .list_expertise {
