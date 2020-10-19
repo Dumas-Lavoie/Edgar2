@@ -130,6 +130,12 @@
     .footer_entete p {
         align-self: center;
     }
+    .multi_span span:nth-child(1) {
+        flex: 1;
+    }
+    .separateur {
+        flex: 1;
+    }
 }
 
 @media screen and (max-width:650px) {

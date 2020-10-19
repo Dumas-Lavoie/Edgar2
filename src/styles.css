@@ -1556,6 +1556,16 @@ footer .credits {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .multi_span span:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .separateur {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 @media screen and (max-width: 650px) {
