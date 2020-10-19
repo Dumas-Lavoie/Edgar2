@@ -1,3 +1,10 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  mix-blend-mode: difference;
+}
+
 header.open {
   z-index: 6;
 }
@@ -27,7 +34,7 @@ header .hamburger .line {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #FEF2D1;
+  background-color: #FFFFFF;
   position: absolute;
   top: 48%;
   left: 51%;
