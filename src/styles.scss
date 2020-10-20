@@ -1,14 +1,15 @@
-.main-stop {
+
+  .main-stop {
     stop-color: #E7BB41;
-}
-
-.alt-stop {
+  }
+  .alt-stop {
     stop-color: #EB5C5E;
-}
+  }
 
-@import "./css/header";
-@import "./css/general";
-@import "./css/front-page";
-@import "./css/sections";
-@import "./css/footer";
-@import "./css/_section_entete";
+
+  @import "./css/header";
+  @import "./css/general";
+  @import "./css/front-page";
+  @import "./css/sections";
+  @import "./css/footer";
+  
