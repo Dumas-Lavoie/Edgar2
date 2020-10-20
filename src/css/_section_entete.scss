@@ -1,0 +1,183 @@
+@font-face {
+    font-family: gravityWanders;
+    src: url(assets/fonts/gravity_wanders-webfont.woff);
+}
+
+.section_entete {
+    position: relative;
+    width: 100vw;
+}
+
+.sous_titre {
+    padding-top: 200px;
+}
+
+.conteneur {
+    max-width: 1020px;
+    color: #10374F;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.conteneur h1 {
+    font-family: gravityWanders;
+    font-size: 85px;
+    font-weight: normal
+}
+
+.para {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.multi_span {
+    display: flex;
+}
+
+.multi_span span:nth-child(1) {
+    font-weight: bold;
+    font-family: hypatia-sans-pro;
+    font-size: 24px;
+}
+
+.details {
+    flex: 40%;
+    font-family: hypatia-sans-pro;
+    font-size: 24px;
+}
+
+.separateur {
+    width: 90px;
+    border-bottom: 5px solid black;
+    height: 4px;
+    margin: 8px;
+}
+
+.expertise {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+}
+
+.list_expertise {
+    font-family: hypatia-sans-pro;
+    font-size: 24px
+}
+
+.footer_entete {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.footer_entete p {
+    flex: 1 100%;
+    display: flex;
+}
+
+.footer_entete div {
+    flex: 2;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.links_entete {
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-family: 'hypatia-sans-pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #10374F;
+}
+
+
+/*
+
+* {
+    border: 1px solid red;
+}
+*/
+
+
+/*MEDIA QUERIES ENTETE POMPETTES PRODUCTIONS*/
+
+@media screen and (max-width: 1024px) {
+    .conteneur {
+        padding: 0 60px;
+    }
+    .para {
+        flex-direction: column;
+    }
+    .multi_span {
+        flex-basis: 25%;
+    }
+    .sous_para {
+        /*flex: 33.33%;*/
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer_entete {
+        flex-direction: column;
+    }
+    .footer_entete p {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .conteneur h1 {
+        font-size: 36px;
+    }
+    .multi_span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .multi_span span:nth-child(1) {
+        font-size: 16px;
+    }
+    .details,
+    .list_expertise {
+        font-size: 16px;
+    }
+    .footer_entete {
+        align-items: center;
+    }
+}
+
+
+/*SECTION IMAGE*/
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    background-color: #E6BE1E;
+}
+
+.imgwrap {
+    margin: auto;
+    height: 870px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgwrap img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
