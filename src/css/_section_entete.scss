@@ -34,8 +34,13 @@
     flex-direction: row;
 }
 
+.sous_para {
+    display: flex;
+}
+
 .multi_span {
     display: flex;
+    flex: 1;
 }
 
 .multi_span span:nth-child(1) {
@@ -75,16 +80,17 @@
 }
 
 .footer_entete p {
-    flex: 1 100%;
+    flex: 50%;
     display: flex;
 }
 
 .footer_entete div {
-    flex: 2;
+    flex: 50%;
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: row;
+    justify-content: center;
 }
 
 .links_entete {
@@ -104,6 +110,7 @@
 * {
     border: 1px solid red;
 }
+
 */
 
 
@@ -120,15 +127,24 @@
         flex-basis: 25%;
     }
     .sous_para {
-        /*flex: 33.33%;*/
         width: 100%;
         margin-bottom: 40px;
+        flex-direction: column;
     }
     .footer_entete {
         flex-direction: column;
     }
     .footer_entete p {
         align-self: center;
+    }
+    .footer_entete div {
+        justify-content: start;
+    }
+    .multi_span span:nth-child(1) {
+        flex: 1;
+    }
+    .separateur {
+        flex: 1;
     }
 }
 
