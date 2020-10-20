@@ -3,7 +3,8 @@
     src: url(assets/fonts/gravity_wanders-webfont.woff);
 }
 
-.section_entete {
+.section_entete,
+.section_defis {
     position: relative;
     width: 100vw;
 }
@@ -24,7 +25,9 @@
 .conteneur h1 {
     font-family: gravityWanders;
     font-size: 85px;
-    font-weight: normal
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 1.5em;
 }
 
 .para {
@@ -94,14 +97,13 @@
 }
 
 .links_entete {
-    margin-top: 0;
-    margin-bottom: 0;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     font-family: 'hypatia-sans-pro', sans-serif;
-    font-weight: 600;
-    font-style: normal;
     color: #10374F;
+    font-weight: 500;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 
@@ -110,7 +112,6 @@
 * {
     border: 1px solid red;
 }
-
 */
 
 
@@ -135,16 +136,26 @@
         flex-direction: column;
     }
     .footer_entete p {
-        align-self: center;
+        align-self: flex-start;
     }
     .footer_entete div {
         justify-content: start;
     }
     .multi_span span:nth-child(1) {
-        flex: 1;
+        width: 14%;
     }
     .separateur {
         flex: 1;
+        height: 10px;
+    }
+    .details {
+        padding-left: 14px;
+    }
+    .expertise {
+        flex: 41.5%;
+    }
+    .list_expertise {
+        padding-left: 10px;
     }
 }
 
@@ -184,16 +195,60 @@
 
 .imgwrap {
     margin: auto;
-    height: 870px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imgwrap img {
-    display: block;
-    width: 100%;
     max-width: 500px;
-    height: auto;
-    margin: auto;
+}
+
+
+/*SECTION DEFIS et SECTION SOLUTION*/
+
+.section_defis {
+    background-color: #F8F8F8;
+    flex-direction: row;
+}
+
+.section_solution {}
+
+.section_defis,
+.section_solution {
+    display: flex;
+    width: 100%;
+}
+
+.flex-item {
+    height: 100vh;
+    flex: 50%;
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.flex-item img {
+    margin: 80px;
+}
+
+.info-container {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container h1 {
+    font-family: gravityWanders;
+    font-size: 85px;
+    font-weight: normal;
+    margin: 0px;
+    padding-top: 40px;
+}
+
+.info-container p {
+    font-family: hypatia-sans-pro;
+    font-size: 24px;
+    padding: 0px;
+    width: 70%;
 }
