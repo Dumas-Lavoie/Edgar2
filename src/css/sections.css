@@ -676,6 +676,9 @@ section.ruban:after {
 }
 
 @media screen and (max-width: 450px) {
+  section.section_cafe .flex_cafe:first-of-type p {
+    width: 100%;
+  }
   section.section_cafe .mission {
     font-size: 25px;
     width: 100%;
