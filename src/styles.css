@@ -952,7 +952,7 @@ section.section_texte .macaron:hover .fleche {
 }
 
 .conteneur {
-  max-width: 1020px;
+  max-width: 1100px;
   color: #10374F;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1099,8 +1099,9 @@ section.section_texte .macaron:hover .fleche {
 
 /*
 
+
 * {
-    border: 1px solid red;
+    border: 0.5px solid red;
 }*/
 /*--------------------------MEDIA QUERIES ENTETE POMPETTES PRODUCTIONS-----------------------------*/
 @media screen and (max-width: 1024px) {
@@ -1229,18 +1230,24 @@ section.section_texte .macaron:hover .fleche {
 }
 
 .imgwrap img {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
   .imgwrap {
     height: 50vh;
   }
+  .imgwrap img {
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-width: 650px) {
+  .imgwrap {
+    height: 40vh;
+  }
   .imgwrap img {
-    height: 50vh;
+    height: 25vh;
   }
 }
 
@@ -1273,12 +1280,14 @@ section.section_texte .macaron:hover .fleche {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  /*  width: 100%;*/
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
 }
 
 .flex-item img {
-  margin-top: 80px;
-  max-width: 100%;
+  max-width: 36%;
 }
 
 .info-container {
@@ -1293,7 +1302,6 @@ section.section_texte .macaron:hover .fleche {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  padding-top: 80px;
 }
 
 .info-container h1 {
@@ -1304,21 +1312,22 @@ section.section_texte .macaron:hover .fleche {
 }
 
 .info-container img {
-  max-width: 100%;
-  padding-left: 80px;
+  max-width: 90%;
 }
 
 .info-container p,
 .flex-item.solutions p {
   font-family: hypatia-sans-pro;
   font-size: 24px;
-  padding: 0px;
-  margin: 0px;
 }
 
 .flex-item.solutions h1 {
-  padding-top: 80px;
   margin: 0px;
+  line-height: 85px;
+}
+
+.flex-item.solutions > * {
+  padding-right: 120px;
 }
 
 .conteneur.defis {
@@ -1326,6 +1335,7 @@ section.section_texte .macaron:hover .fleche {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 150px;
 }
 
 .conteneur.solutions {
@@ -1333,6 +1343,7 @@ section.section_texte .macaron:hover .fleche {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 150px;
 }
 
 .flex-item.solutions {
@@ -1350,6 +1361,7 @@ section.section_texte .macaron:hover .fleche {
 }
 
 @media screen and (max-width: 1024px) {
+  /**/
   .flex-item img {
     width: 50%;
   }
@@ -1362,6 +1374,53 @@ section.section_texte .macaron:hover .fleche {
   .info-container p {
     font-size: 20px;
   }
+}
+
+/*-------------------------------------------FIN SECTION DEFIS / SOLUTIONS -----------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------SECTION GRID IMAGES-----------------------------------------------------*/
+.section_grid_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteneur_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 60px;
+}
+
+.box_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.box_img img {
+  position: relative;
+  max-width: 100%;
+  padding: 60px;
 }
 
 section.section_cafe {
