@@ -10,25 +10,22 @@
     position: relative;
     width: 100vw;
     flex-direction: row;
-}
-
-.sous_titre {
     padding-top: 200px;
 }
 
-.conteneur {
-    max-width: 1020px;
+.margin_supp {
+    max-width: 1100px;
     color: #10374F;
     display: flex;
     margin: auto;
 }
 
-.conteneur.entete {
+.margin_supp.entete {
     flex-direction: column;
     padding-bottom: 40px;
 }
 
-.conteneur h1 {
+.margin_supp h1 {
     font-family: gravityWanders;
     font-size: 85px;
     font-weight: normal;
@@ -114,16 +111,18 @@
 
 
 /*
-
 * {
-    border: 1px solid red;
-}*/
+    border: 0.5px solid red;
+}
+
+
+
+*/
 
 
 /*--------------------------MEDIA QUERIES ENTETE POMPETTES PRODUCTIONS-----------------------------*/
 
 @media screen and (max-width: 1024px) {
-    /*SECTION ENTETE*/
     .conteneur {
         padding: 0 60px;
     }
@@ -187,10 +186,6 @@
     .links_entete {
         font-size: 16px;
     }
-    /*SECTION IMAGE
-    .imgwrap img {
-        height: 50vh;
-    }*/
 }
 
 
@@ -201,33 +196,37 @@
 
 .box {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: end;
     padding-left: 0;
-    background-color: #E6BE1E;
+    // background-color: #E6BE1E;
 }
 
 .imgwrap {
     margin: auto;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imgwrap img {
-    max-width: 500px;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
-    .imgwrap {
+    /*  .imgwrap {
         height: 50vh;
+    }*/
+    .imgwrap img {
+        max-width: 50%;
     }
 }
 
 @media screen and (max-width:650px) {
+    .imgwrap {
+        height: 40vh;
+    }
     .imgwrap img {
-        height: 50vh;
+        height: 25vh;
     }
 }
 
@@ -244,33 +243,21 @@
     flex-direction: row;
     display: flex;
     background-color: #f8f8f8;
-    width: 100%;
     position: relative;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .section_solution {
     display: flex;
-    width: 100%;
     position: relative;
-}
-
-.flex-item {
-    height: 100vh;
-    display: flex;
-    width: 100%;
-}
-
-.flex-item img {
-    margin-top: 80px;
-    max-width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .info-container {
-    flex: 50%;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-top: 80px;
+    flex-direction: row;
 }
 
 .info-container h1 {
@@ -280,52 +267,95 @@
     margin: 0px;
 }
 
-.info-container img {
-    max-width: 100%;
-    padding-left: 80px;
-}
-
-.info-container p,
-.flex-item.solutions p {
+.info-container p {
     font-family: hypatia-sans-pro;
     font-size: 24px;
-    padding: 0px;
-    margin: 0px;
 }
 
-.flex-item.solutions h1 {
-    padding-top: 80px;
-    margin: 0px;
+.defis {
+    flex: 30%;
+    padding: 0px 0px 0px 40px;
 }
 
-.conteneur.defis {
-    flex-direction: row;
+.solutions {
+    flex: 30%;
 }
 
-.conteneur.solutions {
-    flex-direction: row;
-}
-
-.flex-item.solutions {
-    flex: 70%;
-    position: relative;
+.solutions,
+.defis {
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (max-width: 1024px) {
-    .flex-item img {
-        width: 50%;
+    .solutions {
+        flex: 50%;
+        padding: 0px 40px 40px 0px;
     }
+}
+
+@media screen and (max-width: 768px) {
     .info-container {
-        padding: 20px;
+        flex-direction: row;
     }
     .info-container h1 {
-        font-size: 60px;
+        font-size: 40px;
+        line-height: 40px;
+        margin: 0px
     }
     .info-container p {
-        font-size: 20px;
+        font-size: 16px;
+        padding: 0px;
+        margin: 0px;
+    }
+    /*.box_img.box {
+        flex: 50%;
+    }*/
+    .defis {
+        flex: 40%;
+    }
+    .solutions {
+        flex: 40%;
     }
 }
 
 @media screen and (max-width:650px) {}
+
+
+/*-------------------------------------------FIN SECTION DEFIS / SOLUTIONS -----------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------SECTION GRID IMAGES-----------------------------------------------------*/
+
+.section_grid_images {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.conteneur_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box_img {
+    display: flex;
+    flex: 40%;
+    align-items: baseline;
+    /*padding: 0px 40px 40px 0px;*/
+}
+
+.box_img img {
+    position: relative;
+    max-width: 100%;
+}
+
+.grid_images {
+    margin: 20px;
+}
