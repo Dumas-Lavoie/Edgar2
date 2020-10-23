@@ -95,7 +95,7 @@ export class Planes {
         this.sceneManager.onPlaneHover(index);
 
         window.onclick = () => {
-          if (!$('.hamburger').hasClass('open')) 
+          if (!$('.hamburger').hasClass('open') && $('#webGLApp').is(":visible")) 
           {
             if (index == 0)
             {

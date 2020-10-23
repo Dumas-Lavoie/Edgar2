@@ -118,6 +118,12 @@ section.section_texte .macaron:hover .fleche {
   }
 }
 
+@media screen and (max-width: 768px) {
+  section.section_texte .sous_titre {
+    padding-top: 0;
+  }
+}
+
 @media screen and (max-width: 650px) {
   section.section_texte {
     padding-top: 100px;
@@ -149,6 +155,10 @@ section.section_texte .macaron:hover .fleche {
   section.section_texte .mission {
     font-size: 25px;
     width: 100%;
+  }
+  section.section_texte .macaron {
+    width: 220px;
+    height: 220px;
   }
 }
 
@@ -298,12 +308,46 @@ section.section_texte .macaron:hover .fleche {
   }
 }
 
+@media screen and (max-width: 1550px) {
+  .section_services .img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .section_services .margin_supp {
     margin: 0;
   }
   .section_services .margin_supp .flex_domaines .presentation_domaines h3 {
     font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section_services .img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section_services p {
+    font-size: 20px;
+    width: auto;
+  }
+  .section_services h3 {
+    font-size: 85px;
+  }
+  .section_services .sidebar {
+    width: auto;
+  }
+  .section_services .sous_titre {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section_services h3 {
+    font-size: 70px;
   }
 }
 
@@ -739,6 +783,76 @@ section.section_texte .macaron:hover .fleche {
   }
 }
 
+section#appMobile {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
+section#appMobile .flex_projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  top: 25vh;
+  height: 450px;
+}
+
+section#appMobile .flex_projets a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section#appMobile .flex_projets a:nth-of-type(1) {
+  background-image: url("../src/assets/projets/pompettes.jpg");
+}
+
+section#appMobile .flex_projets a:nth-of-type(2) {
+  background-image: url("../src/assets/projets/presby.jpg");
+}
+
+section#appMobile .flex_projets a:nth-of-type(3) {
+  background-image: url("../src/assets/projets/icerolls.jpg");
+}
+
+section#appMobile .flex_projets a p {
+  font-family: 'hypatia-sans-pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  min-width: 200px;
+  color: #FFFFFF;
+}
+
+section.section_texte.section_cafe .sous_titre {
+  padding-top: 0;
+}
+
 section.section_cafe {
   width: 100vw;
   padding-top: 200px;
@@ -837,7 +951,6 @@ section.section_domaines {
   background-color: #FEF2D1;
   cursor: default;
   padding: 175px 0;
-  height: 1600px;
   position: relative;
 }
 
@@ -1047,7 +1160,7 @@ section.ruban:after {
 
 @media screen and (max-width: 1600px) {
   section.section_cafe .macaron {
-    margin: 0;
+    margin: auto;
     top: 0;
   }
   section.section_cafe .margin_supp {
@@ -1089,10 +1202,19 @@ section.ruban:after {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #webGLApp {
+    display: none;
+  }
+  section#appMobile {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 650px) {
   section.section_cafe {
     padding-top: 100px;
-    padding-bottom: 350px;
+    padding-bottom: 0;
   }
   section.section_cafe.deuxieme {
     padding-bottom: 200px;
@@ -1109,10 +1231,14 @@ section.ruban:after {
 }
 
 @media screen and (max-width: 450px) {
-  section.section_cafe .flex_cafe:first-of-type p {
+  section.section_texte.section_cafe .macaron {
+    margin: auto;
+    margin-bottom: 200px;
+  }
+  section.section_texte.section_cafe .flex_cafe:first-of-type p {
     width: 100%;
   }
-  section.section_cafe .mission {
+  section.section_texte.section_cafe .mission {
     font-size: 25px;
     width: 100%;
   }

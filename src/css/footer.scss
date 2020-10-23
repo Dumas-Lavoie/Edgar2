@@ -105,3 +105,13 @@ footer {
   }
 
 }
+
+
+@media screen and (max-width: 375px) {
+
+  footer {
+    .wrap {
+      padding: 0 15px;
+    }
+  }
+}

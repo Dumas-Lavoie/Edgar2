@@ -95,4 +95,10 @@ footer .credits {
     text-align: left;
   }
 }
+
+@media screen and (max-width: 375px) {
+  footer .wrap {
+    padding: 0 15px;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

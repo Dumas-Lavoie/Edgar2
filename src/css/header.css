@@ -244,6 +244,21 @@ header .fullpage_menu .padding_supp .margin_supp .liens_menu > div p {
   }
 }
 
+@media screen and (max-width: 425px) {
+  header .fullpage_menu .wrap {
+    padding: 0 20px;
+  }
+  header .fullpage_menu .contact {
+    margin-bottom: 0;
+  }
+  header .fullpage_menu .padding_supp .margin_supp {
+    margin: 0;
+  }
+  header .fullpage_menu .padding_supp .margin_supp .menu_flex .petits_liens a {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 375px) and (max-height: 667px) {
   header .fullpage_menu .medias_sociaux, header .contact {
     display: none;

@@ -153,6 +153,16 @@ section.section_texte {
   }
 }
 
+@media screen and (max-width: 768px) {
+section.section_texte {
+  
+  .sous_titre {
+    padding-top: 0;
+  }
+}
+
+}
+
 @media screen and (max-width: 650px) {
 
   section.section_texte {
@@ -192,6 +202,11 @@ section.section_texte {
     .mission {
       font-size: 25px;
       width: 100%;
+    }
+
+    .macaron {
+      width: 220px;
+      height: 220px;
     }
   }
 }
