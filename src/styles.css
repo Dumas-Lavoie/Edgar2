@@ -1227,30 +1227,23 @@ section.section_texte .macaron:hover .fleche {
 }
 
 .section_full_image {
-  background-color: #E6BE1E;
   cursor: default;
   position: relative;
+}
+
+/*changer de background en fonction de la section visée*/
+.section_full_image:nth-child(odd) {
+  background-color: #E6BE1E;
   padding: 100px 0px 100px 0px;
 }
 
-@media screen and (max-width: 1024px) {
-  /*  .imgwrap {
-        height: 50vh;
-    }*/
-  .imgwrap img {
-    max-width: 50%;
-  }
+.section_full_image:nth-child(even) {
+  background: none;
 }
 
 @media screen and (max-width: 650px) {
-  .imgwrap {
-    height: 40vh;
-  }
-  .imgwrap img {
-    height: 25vh;
-  }
   .section_full_image {
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
   }
 }
 
@@ -1472,6 +1465,7 @@ section.section_texte .macaron:hover .fleche {
   }
 }
 
+/*SECTION A VOIR AVEC FELIX section.section_domaines */
 section.section_cafe {
   width: 100vw;
   padding-top: 200px;
