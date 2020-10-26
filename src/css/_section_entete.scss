@@ -10,22 +10,25 @@
     position: relative;
     width: 100vw;
     flex-direction: row;
+}
+
+.sous_titre {
     padding-top: 200px;
 }
 
-.margin_supp {
-    max-width: 1100px;
+.conteneur {
+    max-width: 1020px;
     color: #10374F;
     display: flex;
     margin: auto;
 }
 
-.margin_supp.entete {
+.conteneur.entete {
     flex-direction: column;
     padding-bottom: 40px;
 }
 
-.margin_supp h1 {
+.conteneur h1 {
     font-family: gravityWanders;
     font-size: 85px;
     font-weight: normal;
@@ -111,18 +114,16 @@
 
 
 /*
+
 * {
-    border: 0.5px solid red;
-}
-
-
-
-*/
+    border: 1px solid red;
+}*/
 
 
 /*--------------------------MEDIA QUERIES ENTETE POMPETTES PRODUCTIONS-----------------------------*/
 
 @media screen and (max-width: 1024px) {
+    /*SECTION ENTETE*/
     .conteneur {
         padding: 0 60px;
     }
@@ -165,20 +166,16 @@
 }
 
 @media screen and (max-width:650px) {
-    .margin_supp.entete h1 {
-        font-size: 40px;
+    .conteneur h1 {
+        font-size: 36px;
     }
     .multi_span {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-bottom: 10px;
     }
     .multi_span span:nth-child(1) {
         font-size: 16px;
-    }
-    .separateur {
-        width: 90%;
     }
     .details,
     .list_expertise {
@@ -190,6 +187,10 @@
     .links_entete {
         font-size: 16px;
     }
+    /*SECTION IMAGE
+    .imgwrap img {
+        height: 50vh;
+    }*/
 }
 
 
@@ -200,42 +201,33 @@
 
 .box {
     display: flex;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
     padding-left: 0;
-    // background-color: #E6BE1E;
+    background-color: #E6BE1E;
 }
 
 .imgwrap {
     margin: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imgwrap img {
-    max-width: 100%;
+    max-width: 500px;
 }
 
-.section_full_image {
-    cursor: default;
-    position: relative;
-}
-
-
-/*changer de background en fonction de la section visée*/
-
-.section_full_image:nth-child(odd) {
-    background-color: #E6BE1E;
-    padding: 100px 0px 100px 0px;
-}
-
-.section_full_image:nth-child(even) {
-    background: none;
+@media screen and (max-width: 1024px) {
+    .imgwrap {
+        height: 50vh;
+    }
 }
 
 @media screen and (max-width:650px) {
-    .section_full_image {
-        padding: 0px;
+    .imgwrap img {
+        height: 50vh;
     }
 }
 
@@ -252,21 +244,33 @@
     flex-direction: row;
     display: flex;
     background-color: #f8f8f8;
+    width: 100%;
     position: relative;
-    padding-bottom: 100px;
-    padding-top: 100px;
 }
 
 .section_solution {
     display: flex;
+    width: 100%;
     position: relative;
-    margin-top: 100px;
-    margin-bottom: 100px;
+}
+
+.flex-item {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.flex-item img {
+    margin-top: 80px;
+    max-width: 100%;
 }
 
 .info-container {
+    flex: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
+    padding-top: 80px;
 }
 
 .info-container h1 {
@@ -276,141 +280,52 @@
     margin: 0px;
 }
 
-.info-container p {
+.info-container img {
+    max-width: 100%;
+    padding-left: 80px;
+}
+
+.info-container p,
+.flex-item.solutions p {
     font-family: hypatia-sans-pro;
     font-size: 24px;
+    padding: 0px;
+    margin: 0px;
 }
 
-.defis {
-    flex: 30%;
-    padding: 0px 0px 0px 40px;
+.flex-item.solutions h1 {
+    padding-top: 80px;
+    margin: 0px;
 }
 
-.solutions {
-    flex: 30%;
+.conteneur.defis {
+    flex-direction: row;
 }
 
-.solutions,
-.defis {
+.conteneur.solutions {
+    flex-direction: row;
+}
+
+.flex-item.solutions {
+    flex: 70%;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (max-width: 1024px) {
-    .solutions {
-        flex: 50%;
-        padding: 0px 40px 40px 0px;
+    .flex-item img {
+        width: 50%;
+    }
+    .info-container {
+        padding: 20px;
     }
     .info-container h1 {
-        font-size: 62px;
-        line-height: 62px;
+        font-size: 60px;
     }
     .info-container p {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .info-container {
-        flex-direction: row;
-    }
-    .info-container h1 {
-        font-size: 40px;
-        line-height: 80px;
-        margin: 0px;
-    }
-    .info-container p {
-        font-size: 16px;
-        padding: 6px;
-        margin: 0px;
-    }
-    .defis {
-        flex: 40%;
-    }
-    .solutions {
-        flex: 40%;
-    }
-}
-
-@media screen and (max-width:650px) {
-    .info-container {
-        flex-direction: column;
-    }
-    .info-container.solutions_ {
-        flex-direction: column-reverse;
-    }
-    .info-container p {
-        text-align: justify;
-    }
-    .section_defis {
-        padding-bottom: 50px;
-        padding-top: 50px;
-    }
-    .defis {
-        padding: 0px;
-    }
-    .section_solution {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .solutions {
-        padding: 0px;
-    }
-}
-
-
-/*-------------------------------------------FIN SECTION DEFIS / SOLUTIONS -----------------------------------------*/
-
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-
-/*-------------------------------------------SECTION GRID IMAGES-----------------------------------------------------*/
-
-.section_grid_images {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 80px;
-}
-
-.conteneur_images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.box_img {
-    display: flex;
-    flex: 40%;
-    align-items: baseline;
-    /*padding: 0px 40px 40px 0px;*/
-}
-
-.box_img img {
-    position: relative;
-    max-width: 100%;
-}
-
-.grid_images {
-    margin: 20px;
-    overflow-x: hidden !important;
-}
-
-@media screen and (max-width:650px) {
-    .section_grid_images {
-        margin-top: 50px;
-        margin-bottom: 40px;
-    }
-    .box_img {
-        flex: 100%;
-        flex-wrap: wrap;
-    }
-}
-
-
-/*SECTION A VOIR AVEC FELIX section.section_domaines */
-
-.section.section_domaines {}
+@media screen and (max-width:650px) {}
