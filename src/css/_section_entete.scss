@@ -13,24 +13,20 @@
     padding-top: 200px;
 }
 
-.margin_supp {
-    // max-width: 1100px;
-    color: #10374F;
-
-    // margin: auto;
-}
-
-.margin_supp.entete {
+.entete {
+    margin: 0;
     flex-direction: column;
     padding-bottom: 40px;
+    display: flex;
+    color: #10374F;
 }
 
-.margin_supp h1 {
+.entete h1 {
     font-family: gravityWanders;
-    font-size: 85px;
+    font-size: 64px;
     font-weight: normal;
-    margin-top: 20px;
-    line-height: 1.5em;
+    margin-top: 0px;
+    line-height: 74px;
 }
 
 .para {
@@ -46,17 +42,53 @@
 
 .multi_span {
     display: flex;
-    flex: 1;
+    /**/
+}
+
+.multi_span:nth-of-type(1) {
+    flex: 40%;
+    margin-right: 40px;
+}
+
+.multi_span:nth-of-type(1)>:nth-child(1) {
+    flex: 20%;
+}
+
+.multi_span:nth-of-type(1)>:nth-child(2) {
+    flex: 20%;
+}
+
+.multi_span:nth-of-type(1)>:nth-child(3) {
+    flex: 50%;
+}
+
+.multi_span:nth-of-type(2) {
+    flex: 30%;
+    margin-right: 40px;
+}
+
+.multi_span:nth-of-type(3) {
+    flex: 30%;
+}
+
+.multi_span:nth-of-type(3)>:nth-child(1) {
+    flex: 20%;
+}
+
+.multi_span:nth-of-type(3)>:nth-child(2) {
+    flex: 20%;
 }
 
 .multi_span span:nth-child(1) {
     font-weight: bold;
     font-family: hypatia-sans-pro;
     font-size: 24px;
+    flex: 33.33%;
+    padding-left: 5%;
 }
 
 .details {
-    flex: 40%;
+    flex: 33.33%;
     font-family: hypatia-sans-pro;
     font-size: 24px;
 }
@@ -66,17 +98,21 @@
     border-bottom: 5px solid black;
     height: 4px;
     margin: 8px;
+    flex: 33.33%;
+    margin-right: 5%;
 }
 
 .expertise {
     display: flex;
     flex-direction: column;
-    flex: 40%;
-}
-
-.list_expertise {
+    /**/
+    flex: 33.33%;
     font-family: hypatia-sans-pro;
     font-size: 24px
+}
+
+.expertise:nth-child(1) {
+    flex: 0;
 }
 
 .footer_entete {
@@ -96,7 +132,8 @@
     align-content: center;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 60px;
 }
 
 .links_entete {
@@ -111,13 +148,11 @@
 
 
 /*
+
 * {
     border: 0.5px solid red;
-}
-
-
-
-*/
+    box-sizing: border-box;
+}*/
 
 
 /*--------------------------MEDIA QUERIES ENTETE POMPETTES PRODUCTIONS-----------------------------*/
@@ -130,7 +165,8 @@
         flex-direction: column;
     }
     .multi_span {
-        flex-basis: 25%;
+        flex: 1;
+        margin-bottom: 40px;
     }
     .sous_para {
         width: 100%;
@@ -147,20 +183,36 @@
         justify-content: start;
     }
     .multi_span span:nth-child(1) {
-        width: 14%;
+        padding-left: 0px;
+    }
+    .multi_span:nth-of-type(1) {
+        flex: 1;
+        margin-right: 0px;
+    }
+    .multi_span:nth-of-type(2)>:nth-child(1) {
+        flex: 10%;
+    }
+    .multi_span:nth-of-type(2)>:nth-child(2) {
+        flex: 20%;
+        margin-left: 15px;
+        padding-left: 20px;
+    }
+    .multi_span:nth-of-type(1)> :nth-child(1) {
+        flex: 10%;
+    }
+    .multi_span:nth-of-type(3)> :nth-child(1) {
+        flex: 10%;
     }
     .separateur {
-        flex: 1;
         height: 10px;
+        margin-top: 8px;
     }
     .details {
-        padding-left: 14px;
+        padding-left: 0px;
+        flex: 50%;
     }
     .expertise {
-        flex: 41.5%;
-    }
-    .list_expertise {
-        padding-left: 10px;
+        flex: 50%;
     }
 }
 
@@ -200,8 +252,8 @@
 
 .box {
     display: flex;
-    justify-content: end;
-    padding-left: 0;
+    /* justify-content: end;
+    padding-left: 0;*/
     // background-color: #E6BE1E;
 }
 
@@ -225,7 +277,7 @@
 /*changer de background en fonction de la section visée*/
 
 .section_full_image:nth-child(odd) {
-    background-color: #E6BE1E;
+    background-color: $beige;
     padding: 100px 0px 100px 0px;
 }
 
@@ -257,6 +309,10 @@
     padding-top: 100px;
 }
 
+.text_image {
+    margin: 0;
+}
+
 .section_solution {
     display: flex;
     position: relative;
@@ -271,23 +327,27 @@
 
 .info-container h1 {
     font-family: gravityWanders;
-    line-height: 85px;
+    line-height: 74px;
     font-weight: normal;
     margin: 0px;
+    font-size: 64px;
+    color: $bleu;
 }
 
 .info-container p {
     font-family: hypatia-sans-pro;
     font-size: 24px;
+    color: $bleu;
 }
 
 .defis {
     flex: 30%;
-    padding: 0px 0px 0px 40px;
+    padding: 80px 80px 0px 80px;
 }
 
 .solutions {
     flex: 30%;
+    padding: 80px 180px 0px 80px;
 }
 
 .solutions,
@@ -297,9 +357,15 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .box_img {
+        flex: 50%;
+    }
+    .defis {
+        padding: 10px
+    }
     .solutions {
         flex: 50%;
-        padding: 0px 40px 40px 0px;
+        padding: 10px;
     }
     .info-container h1 {
         font-size: 62px;
@@ -339,9 +405,7 @@
     .info-container.solutions_ {
         flex-direction: column-reverse;
     }
-    .info-container p {
-        text-align: justify;
-    }
+    .info-container p {}
     .section_defis {
         padding-bottom: 50px;
         padding-top: 50px;
@@ -369,24 +433,41 @@
 
 .section_grid_images {
     display: flex;
-    justify-content: center;
+    /*  justify-content: center;*/
     margin-top: 100px;
     margin-bottom: 80px;
 }
 
-.conteneur_images {
+#offices {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+}
+
+.col {
+    flex: 1;
+}
+
+.row>* {
+    margin-bottom: 50px;
+}
+
+#officesImg {
+    line-height: 0;
+    display: flex;
+}
+
+#officesImg img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.grid_images {
+    overflow-x: hidden !important;
+    margin: 0px;
 }
 
 .box_img {
     display: flex;
-    flex: 40%;
-    align-items: baseline;
-    /*padding: 0px 40px 40px 0px;*/
 }
 
 .box_img img {
@@ -394,10 +475,7 @@
     max-width: 100%;
 }
 
-.grid_images {
-    margin: 20px;
-    overflow-x: hidden !important;
-}
+@media screen and (max-width:1024px) {}
 
 @media screen and (max-width:650px) {
     .section_grid_images {
@@ -412,5 +490,3 @@
 
 
 /*SECTION A VOIR AVEC FELIX section.section_domaines */
-
-.section.section_domaines {}
