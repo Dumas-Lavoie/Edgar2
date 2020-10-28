@@ -528,7 +528,6 @@ section.section_texte .macaron:hover .fleche {
 
 /*
 
-
 * {
     border: 0.5px solid red;
     box-sizing: border-box;
@@ -574,11 +573,7 @@ section.section_texte .macaron:hover .fleche {
             justify-content: start;
   }
   .multi_span span:nth-child(1) {
-    width: 14%;
     padding-left: 0px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
   }
   .multi_span:nth-of-type(1) {
     -webkit-box-flex: 1;
@@ -595,6 +590,8 @@ section.section_texte .macaron:hover .fleche {
     -webkit-box-flex: 20%;
         -ms-flex: 20%;
             flex: 20%;
+    margin-left: 15px;
+    padding-left: 20px;
   }
   .multi_span:nth-of-type(1) > :nth-child(1) {
     -webkit-box-flex: 10%;
@@ -607,9 +604,6 @@ section.section_texte .macaron:hover .fleche {
             flex: 10%;
   }
   .separateur {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
     height: 10px;
     margin-top: 8px;
   }
@@ -790,11 +784,19 @@ section.section_texte .macaron:hover .fleche {
 }
 
 @media screen and (max-width: 1024px) {
+  .box_img {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .defis {
+    padding: 10px;
+  }
   .solutions {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
-    padding: 0px 40px 40px 0px;
+    padding: 10px;
   }
   .info-container h1 {
     font-size: 62px;
