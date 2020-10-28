@@ -135,10 +135,6 @@ header .fullpage_menu .padding_supp .margin_supp .menu_flex {
           justify-content: space-between;
 }
 
-header .fullpage_menu .padding_supp .margin_supp .menu_flex .petits_liens {
-  margin-right: 480px;
-}
-
 header .fullpage_menu .padding_supp .margin_supp .menu_flex .petits_liens h6 {
   font-size: 20px;
   font-family: 'hypatia-sans-pro', sans-serif;
