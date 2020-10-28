@@ -89,6 +89,10 @@ footer {
 
   footer {
 
+    .margin_supp {
+      margin: unset;
+    }
+
     .travail {
       display: none;
     }
@@ -100,4 +104,14 @@ footer {
     }
   }
 
+}
+
+
+@media screen and (max-width: 375px) {
+
+  footer {
+    .wrap {
+      padding: 0 15px;
+    }
+  }
 }

@@ -83,6 +83,9 @@ footer .credits {
 }
 
 @media screen and (max-width: 950px) {
+  footer .margin_supp {
+    margin: unset;
+  }
   footer .travail {
     display: none;
   }
@@ -90,6 +93,12 @@ footer .credits {
     margin-top: 45px;
     width: 100%;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  footer .wrap {
+    padding: 0 15px;
   }
 }
 /*# sourceMappingURL=footer.css.map */
