@@ -185,13 +185,7 @@ header .fullpage_menu .padding_supp .margin_supp .liens_menu > div p {
     font-size: 95px;
   }
   header .fullpage_menu .padding_supp .margin_supp .menu_flex .petits_liens {
-    margin-right: 250px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  header .fullpage_menu .padding_supp .margin_supp .menu_flex .petits_liens {
-    margin-right: 100px;
+    margin-right: -100px;
   }
 }
 
@@ -199,8 +193,9 @@ header .fullpage_menu .padding_supp .margin_supp .liens_menu > div p {
   header .fullpage_menu .padding_supp .margin_supp {
     margin-left: 0px;
   }
-  header .fullpage_menu .padding_supp .margin_supp .menu_flex .petits_liens {
-    margin-right: 0px;
+  header .fullpage_menu .padding_supp .margin_supp .liens_menu > div a {
+    font-size: 70px;
+    line-height: 20px;
   }
 }
 

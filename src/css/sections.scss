@@ -99,7 +99,8 @@ section {
             align-items: center;
             &:first-of-type {
                 p {
-                    width: calc(100% * (8 / 12) - 1px);
+                    // width: calc(100% * (8 / 12) - 1px);
+                    width: auto;
                 }
             }
         }
@@ -323,8 +324,21 @@ section {
     }
 }
 
+@media screen and (max-width: 1800px) {
+
+    section {
+        &.section_texte {
+                .mission {
+                    font-size: 50px;
+                }
+        }
+    }
+
+}
+
 @media screen and (max-width: 1600px) {
     section {
+
         &.section_cafe {
             .macaron {
                 
@@ -337,7 +351,7 @@ section {
                 display: block;
                 &:first-of-type {
                     p {
-                        width: calc(100% - 100px);
+                        width: auto;
                     }
                 }
             }
@@ -356,6 +370,23 @@ section {
                 flex-direction: column;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #webGLApp {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #webGLApp {
+        display: none;
+    }
+    section {
+    &#appMobile {
+        display: block;
+        } 
     }
 }
 
@@ -378,21 +409,22 @@ section {
     }
 }
 
-@media screen and (max-width: 768px) {
-        #webGLApp {
-            display: none;
-        }
-        
-        
-        section {
-        &#appMobile {
-            display: block;
-            } 
-        }
-}
-
-
 @media screen and (max-width: 650px) {
+
+
+
+    section.section_texte {
+
+        .mission {
+            font-size: 33px;
+            line-height: 40px;
+        }
+
+        .macaron {
+            padding-bottom: 200px;
+        }
+    }
+    
     section.section_cafe {
         padding-top: 100px;
         padding-bottom: 0;
@@ -411,7 +443,33 @@ section {
     }
 }
 
+@media screen and (max-width: 600px) {
+    section {
+        &#appMobile {
+            display: none;
+            } 
+        }
+}
+
+
 @media screen and (max-width: 450px) {
+
+    section.ruban span {
+        font-size: 55px; 
+ }
+
+ .ruban_anim1 {
+     font-size: 55px;
+ }
+
+    section {
+        &#appMobile {
+            display: none;
+            } 
+        }
+
+  
+
 
   section.section_texte.section_cafe {
 

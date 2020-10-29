@@ -74,7 +74,7 @@
 
     img {
       top: 50%;
-      transform: translate(-50%, -70%);
+      transform: translate(-50%, -90%);
     }
 
     &.branding {
@@ -142,6 +142,7 @@
   }
 }
 
+
 @media screen and (max-width: 1600px) {
 
   .section_services {
@@ -149,33 +150,69 @@
     .margin_supp .flex_domaines {
       flex-direction: column;
     }
+
+    h3 {
+      font-size: 115px;
+    }
+
+    p {
+      font-size: 23px;
+    }
+
+    .img {
+      height: 495px;
+    }
+
+   .img.branding img, .img.web img, .img.strategie img
+   {
+     width: 160px;
+   }
   }
 }
 
-@media screen and (max-width: 1550px) {
+
+@media screen and (max-width: 1400px) {
 
   .section_services {
-    .img {
-      display: none;
+    .margin_supp {
+      margin: 0;
     }
   }
+
+
 }
 
 @media screen and (max-width: 950px) {
 
   .section_services {
     .margin_supp {
-      margin: 0;
+ 
+      p {
+        font-size: 18px;
+        width: 90%;
 
-      .flex_domaines {
-
-        .presentation_domaines {
-
-          h3 {
-            font-size: 80px;
-          }
+        &.sous_titre {
+          font-size: 16px;
         }
       }
+
+      h3 {
+        font-size: 80px;
+      }
+
+      .img 
+      {
+        height: 355px;
+
+        img {
+        transform: translate(-50%, -65%);
+        width: 130px;
+      } 
+      }
+      
+
+
+
     }
   }
 }
@@ -184,8 +221,16 @@
 @media screen and (max-width: 768px) {
 
 
+
+
+
+
   .section_services .img {
     display: none;
+  }
+
+  .section_services .margin_supp p {
+    width: 80vw;
   }
 
 

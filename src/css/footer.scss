@@ -7,16 +7,15 @@ footer {
 
   position: relative;
 
+  .margin_supp {
+    margin: 0;   
+  }
+
   .travail_ensemble {
     display: flex;
     justify-content: space-between;
 
     align-items: center;
-
-    .margin_supp {
-
-      margin: 0 100px;
-    }
 
     .travail {
       text-align: center;
@@ -93,9 +92,14 @@ footer {
       margin: unset;
     }
 
-    .travail {
-      display: none;
+    .travail_ensemble {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      .travail a {
+      font-size: 50px;
     }
+    } 
 
     .credits {
       margin-top: 45px;

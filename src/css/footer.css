@@ -4,6 +4,10 @@ footer {
   position: relative;
 }
 
+footer .margin_supp {
+  margin: 0;
+}
+
 footer .travail_ensemble {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,10 +18,6 @@ footer .travail_ensemble {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-footer .travail_ensemble .margin_supp {
-  margin: 0 100px;
 }
 
 footer .travail_ensemble .travail {
@@ -86,8 +86,15 @@ footer .credits {
   footer .margin_supp {
     margin: unset;
   }
-  footer .travail {
-    display: none;
+  footer .travail_ensemble {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  footer .travail_ensemble .travail a {
+    font-size: 50px;
   }
   footer .credits {
     margin-top: 45px;
