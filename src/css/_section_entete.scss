@@ -194,8 +194,8 @@
     }
     .multi_span:nth-of-type(2)>:nth-child(2) {
         flex: 20%;
-        margin-left: 15px;
-        padding-left: 20px;
+        padding-right: 38px;
+        margin-left: 31px;
     }
     .multi_span:nth-of-type(1)> :nth-child(1) {
         flex: 10%;
@@ -216,6 +216,25 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    .margin_supp.entete h1 {
+        font-size: 56px;
+        line-height: 65px;
+    }
+    .multi_span {
+        margin-bottom: 26px;
+    }
+    .multi_span span:nth-child(1),
+    .details,
+    .expertise {
+        font-size: 22px;
+    }
+    .multi_span:nth-of-type(2)> :nth-child(2) {
+        padding-right: 24px;
+        margin-left: 17px;
+    }
+}
+
 @media screen and (max-width:650px) {
     .margin_supp.entete h1 {
         font-size: 40px;
@@ -233,7 +252,8 @@
         width: 90%;
     }
     .details,
-    .list_expertise {
+    .list_expertise,
+    .expertise {
         font-size: 16px;
     }
     .footer_entete {
@@ -241,6 +261,21 @@
     }
     .links_entete {
         font-size: 16px;
+    }
+}
+
+@media screen and(max-width:479px) {
+    .multi_span:nth-of-type(2)> :nth-child(2) {
+        padding-right: 2px;
+        margin-left: 6px;
+    }
+    .multi_span {
+        padding-bottom: 0px;
+    }
+    .multi_span:nth-of-type(2)> :nth-child(3),
+    .multi_span:nth-of-type(1)> :nth-child(3),
+    .multi_span:nth-of-type(3)> :nth-child(3) {
+        padding: 0px 30px 0px 16px;
     }
 }
 
@@ -258,13 +293,12 @@
 }
 
 .imgwrap {
-    margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .imgwrap img {
+    position: relative;
     max-width: 100%;
 }
 
@@ -279,6 +313,10 @@
 .section_full_image:nth-child(odd) {
     background-color: $beige;
     padding: 100px 0px 100px 0px;
+}
+
+.section_full_image:nth-child(odd) .margin_supp {
+    margin: 0px;
 }
 
 .section_full_image:nth-child(even) {
@@ -361,15 +399,15 @@
         flex: 50%;
     }
     .defis {
-        padding: 10px
+        padding: 24px;
     }
     .solutions {
         flex: 50%;
-        padding: 10px;
+        padding: 24px;
     }
     .info-container h1 {
-        font-size: 62px;
-        line-height: 62px;
+        font-size: 64px;
+        line-height: 87px;
     }
     .info-container p {
         font-size: 20px;
@@ -381,20 +419,23 @@
         flex-direction: row;
     }
     .info-container h1 {
-        font-size: 40px;
-        line-height: 80px;
+        font-size: 36px;
+        line-height: 36px;
         margin: 0px;
     }
     .info-container p {
-        font-size: 16px;
+        font-size: 18px;
         padding: 6px;
+        line-height: 22px;
         margin: 0px;
     }
     .defis {
         flex: 40%;
+        padding: 6px;
     }
     .solutions {
         flex: 40%;
+        padding: 6px;
     }
 }
 
@@ -405,7 +446,6 @@
     .info-container.solutions_ {
         flex-direction: column-reverse;
     }
-    .info-container p {}
     .section_defis {
         padding-bottom: 50px;
         padding-top: 50px;
@@ -422,6 +462,21 @@
     }
 }
 
+@media only screen and (max-width: 479px) {
+    .info-container h1 {
+        font-size: 32px;
+    }
+    .info-container p {
+        font-size: 16px;
+    }
+    .defis {
+        padding: 15px 15px 0px 0px;
+    }
+    .solutions {
+        padding: 15px 15px 0px 0px;
+    }
+}
+
 
 /*-------------------------------------------FIN SECTION DEFIS / SOLUTIONS -----------------------------------------*/
 
@@ -433,7 +488,6 @@
 
 .section_grid_images {
     display: flex;
-    /*  justify-content: center;*/
     margin-top: 100px;
     margin-bottom: 80px;
 }
@@ -444,6 +498,10 @@
 
 .col {
     flex: 1;
+}
+
+.row {
+    margin-right: 50px;
 }
 
 .row>* {
@@ -467,7 +525,7 @@
 }
 
 .box_img {
-    display: flex;
+    display: block;
 }
 
 .box_img img {
@@ -475,7 +533,14 @@
     max-width: 100%;
 }
 
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:768px) {
+    .row {
+        margin-right: 25px;
+    }
+    .row>* {
+        margin-bottom: 25px;
+    }
+}
 
 @media screen and (max-width:650px) {
     .section_grid_images {
@@ -485,6 +550,15 @@
     .box_img {
         flex: 100%;
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #officesImg {
+        flex-direction: column;
+    }
+    .row {
+        margin-right: 0px;
     }
 }
 
