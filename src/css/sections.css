@@ -1079,6 +1079,10 @@ section.section_texte.section_cafe .sous_titre {
   padding-top: 0;
 }
 
+section.section_texte.section_cafe.cachePrMobile {
+  display: none;
+}
+
 section.section_cafe {
   width: 100vw;
   padding-top: 200px;
@@ -1479,6 +1483,26 @@ section.ruban:after {
   section#appMobile {
     display: none;
   }
+  section.section_texte.section_cafe.cachePrMobile {
+    display: block;
+    z-index: 7;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+  }
+  section.section_texte.section_cafe.cachePrMobile .sous_titre {
+    color: #FEF2D1;
+  }
+  section.section_texte.section_cafe.cachePrMobile .mission {
+    margin-bottom: 0;
+    color: #FEF2D1;
+  }
+  section.section_cafe .macaron .fleche {
+    top: 100px;
+  }
+  section.section_texte.section_cafe {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1489,6 +1513,9 @@ section.ruban:after {
     font-size: 55px;
   }
   section#appMobile {
+    display: none;
+  }
+  section.section_texte.section_cafe {
     display: none;
   }
   section.section_texte.section_cafe .macaron {
@@ -1511,6 +1538,24 @@ section.ruban:after {
   section.section_domaines.section_projets .wrap .margin_supp .flex_wrap_projets a.boite {
     width: 100vw;
     min-width: unset;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section_services .margin_supp h3 {
+    font-size: 70px;
+  }
+  section.section_texte.section_cafe.cachePrMobile {
+    top: 15px;
+  }
+  section.section_texte.section_cafe.cachePrMobile .wrap {
+    padding: 0 15px;
+  }
+  section.section_cafe .macaron .contour {
+    display: none;
+  }
+  section.section_cafe .macaron .fleche {
+    display: none;
   }
 }
 /*# sourceMappingURL=sections.css.map */
