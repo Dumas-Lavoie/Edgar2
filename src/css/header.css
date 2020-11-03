@@ -236,6 +236,12 @@ header .fullpage_menu .padding_supp .margin_supp .liens_menu > div p {
 }
 
 @media screen and (max-width: 425px) {
+  header .hamburger {
+    right: 8vw;
+  }
+  header .logo {
+    left: 8vw;
+  }
   header .fullpage_menu .wrap {
     padding: 0 20px;
   }

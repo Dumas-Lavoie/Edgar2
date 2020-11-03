@@ -133,8 +133,27 @@ section.section_texte {
 }
 
 @media screen and (max-width: 1024px) {
-  section.section_texte {
 
+  section.section_texte.section_cafe, section.section_texte.deuxieme {
+    padding-top: 100px;
+    padding-bottom: 75px;
+
+
+  }
+  section.section_texte.section_cafe .macaron {
+
+    .contour {
+      width: 150px;
+      height: 150px;
+    }
+
+    .fleche {
+      width: 21px;
+      height: 35px;
+
+      top: 35%;
+      left: 35%;
+    }
   }
 }
 
@@ -210,4 +229,24 @@ section.section_texte {
       height: 220px;
     }
   }
+ 
+  section.section_texte.section_cafe .sous_titre {
+    left: 0;
+  }
+
+
+  section.section_texte.section_cafe .macaron {
+  
+    .contour {
+    background-image: url(../src/assets/prendre_cafe_beige.svg);
+  }
+
+  .fleche {
+    background-image: url(../src/assets/fleche_beige.svg);
+
+    top: 17%;
+  }
+  } 
+
+
 }

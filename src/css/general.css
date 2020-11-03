@@ -264,6 +264,15 @@ section p.sous_titre {
 }
 
 @media screen and (max-width: 450px) {
+  #cursor, #cursorFollow {
+    display: none;
+  }
+  .section_services .service {
+    position: unset;
+  }
+  section p.sous_titre {
+    left: 0;
+  }
   .wrap {
     padding: 0 25px;
   }
