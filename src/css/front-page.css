@@ -15,7 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 7;
+  z-index: 5;
   position: absolute;
   bottom: 60px;
   right: 60px;
@@ -51,7 +51,7 @@
   position: absolute;
   bottom: 60px;
   left: 60px;
-  z-index: 7;
+  z-index: 5;
   color: #FEF2D1;
   text-transform: uppercase;
   font-family: 'hypatia-sans-pro', sans-serif;

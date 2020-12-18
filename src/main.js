@@ -139,13 +139,13 @@ $(window).resize(function () {
 });
 
 function inViewport() {
+ 
 
     if (screen.width < 450) {
         $('.service').each(function () { 
             $(this).addClass('visible');
         });
      }
- 
      else {
     $('.service').each(function () {
         var divPos = $(this).offset().top,
